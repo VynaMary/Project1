@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let names = ["vyna", "mary", "rose", "sanu", "pinky"]
+        console.log(names.slice(2, 5))
+        console.table(names)
+
+        for (element of names) {
+            console.log(element)
+        }
+
+        console.log("....................................................")
+        for (index in names) {
+            console.log(index)
+            console.log(names[index])
+        }
+
+        //call back function
+        console.log("****************usin for each fn ***********************")
+        names.forEach((names) => {
+            console.log(names)
+        })
+
+
+
+        newarray = names.map((names) => {
+            return names.concat("*")
+        })
+        console.log(newarray)
+
+
+
+        //filter
+        let newarray2 = names.filter((name) => {
+            if (name.startsWith("v")) {
+                return name
+            }
+        })
+        console.log(newarray2)
+
+
+
+        let num_arry=[9,11,10,4,7,8]
+        newarray3=num_arry.map((number)=>{
+            return number**2
+        })
+        console.log(newarray3)
+
+        //reduce function
+        let result=num_arry.reduce((x,y)=>{
+            //console.log("x",x)
+            //console.log("y",y)                   
+            return x+y
+        })
+        console.log(result)
+
+        //reduceRight  addition starts from right end
+        let result1=num_arry.reduceRight((x,y)=>{
+            //console.log("x",x)
+            //console.log("y",y)                   
+            return x+y
+        })
+        console.log(result1)
+
+
+        //sort
+        // num_arry.sort()  error
+        //console.log(num_arry)
+        num_arry.reverse()
+        console.log(num_arry)
+        
+
+
+    </script>
+</body>
+
+</html>

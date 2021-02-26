@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let obj = {}
+        obj.x = 10;
+        obj.y = 20;
+        obj.show = function () {
+            console.log(`x= ${this.x}`)
+            console.log(`y= ${this.y}`)
+        }
+        console.log(obj)
+        console.log(typeof obj)
+        obj.show()
+
+
+        let person = {
+            name: "vyna", age: 10, display: function () {
+                console.log(`Name= ${this.name}`)
+                console.log(`Age= ${this.age}`)
+
+            }
+        }
+        console.log(person)
+        person.display()
+
+
+        let student = {
+            name: "vyna", roll_no: 10, marks: [10, 20, 20], average: function () {
+                let sum = 0;
+                this.marks.forEach(element => {
+                    sum += element
+                });
+                return sum/this.marks.length
+            }}
+                    
+          
+        console.log(student.average())
+        
+    </script>
+</body>
+
+</html>

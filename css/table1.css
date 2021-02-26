@@ -1,0 +1,16 @@
+.tbl{
+    border-collapse: collapse;
+}
+.row1{
+    background-color: rgb(152, 148, 163);
+}
+.row1:hover{
+    background-color: rgb(226, 43, 89);
+}
+
+.rowcls:nth-child(even){
+    background-color: cornflowerblue;
+}
+.rowcls:hover{
+    background-color: darkcyan;
+}

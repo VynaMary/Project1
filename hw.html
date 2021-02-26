@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hw.css">
+</head>
+
+<body>
+    <script src="JS/hw.js"></script>
+    <div id="myDIV" class="header">
+        <h1>My To Do List</h1>
+    </div>
+    
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 style="font-family: 'Times New Roman', Times, serif;">Today</h2>
+            <div>
+                <input type="text" id="myInput" placeholder="Title..." > 
+                <button onclick="newElement()" class="addBtn" >add </button>
+                <button onclick="newElementmove()" class="addBtn">==></button>
+            </div>
+            <ul id="mylist">
+            </ul>
+        </div>
+
+        
+        <div class="col-sm-6">
+            <h2 style="font-family: 'Times New Roman', Times, serif">Tomorrow</h2>
+            <div>
+                <input type="text" id="myInput1" placeholder="Title...">
+                <button onclick="newElement1()" class="addBtn">add</button>
+            </div>
+            <ul id="mylist1">
+            </ul>
+
+        </div>
+        
+
+
+
+
+</body>
+
+</html>

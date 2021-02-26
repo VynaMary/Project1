@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = { name: "vyna", age: 10, address: "aass" }
+        let student = Object.create(person)
+        student["rollno"] = 1
+        console.log(student)
+        student.__proto__.name = "raj"
+        console.log(student)
+        console.log(student.name)
+        // cannot add anything -freeze
+        //Object.freeze(student)
+        // console.log(Object.isFrozen(student))
+        //student.batch="cse"
+        //student.rollno=2
+        //console.log(student)
+
+        Object.seal(student)
+        student.batch = "cse"
+        student.rollno = 2
+        console.log(student)
+        //const a=100
+        //a=50
+        
+
+        //let redecelration not allowed // blk
+        // var keyword allow redeclratin //global
+        var x=90
+        var x=10
+        for(var i of "hello"){
+            console.log(i)
+        }
+        console.log(i)
+
+        
+
+
+    </script>
+
+</body>
+
+</html>

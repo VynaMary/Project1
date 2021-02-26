@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //metacharcters
+        // \s white space
+        // \d =>[0-9]  length should be one it only accepts single digit. 0 or 1 or 2 or 3 or.......9
+        // \w =>[a-z A-Z 0-9]
+        // \W => SPECIAL CHARACTERS NON WORD CHARCATERS
+        // \D => NON DIGITS
+        // \d{5} or[0-9]{5}
+        // \d(3,10)  min len 3 and max 10
+        // \d(3,)  min len 3 and max len infinity
+        // \d+ add atleast one no.or more
+        // \d* 0or moreoccuances
+
+        function check() {
+            // let regex = /\d{5}/g   // g means its a global search
+            // let regex=/^[a-z]{3}\d{2}$/
+            //let regex=/^[9][8][7]\d{7}$/g
+            //let regex=/^\+91\s(987)\d{7}$/g
+            // let regex=/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/g
+            let regex = /^[a-zA-Z0-9+_.-]+@[gmail.com| yahoo.com]+$/g
+
+
+            let data = document.getElementById("data").value
+            alert(data.match(regex))
+            if (regex.test(data)) {
+                alert("valid mobile number")
+            } else {
+                alert("invalid mobile number")
+            }
+        }
+        let inp="python programming python scripting"
+        let regex=/python/g
+        let result=inp.replace(regex,"java script")
+        alert(result)
+
+
+
+    </script>
+    <input type="text" id=data>
+    <button onclick="check()">click</button>
+
+
+</body>
+
+</html>
